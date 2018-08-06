@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+	<head>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		{% block css_path%}
+			<link rel="stylesheet" href="{% static 'css/main.css' %}">
+		{% endblock %}
+		<link href="https://fonts.googleapis.com/css?family=Russo+One&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
+		{% block tit %}<title>Главная страница</title>{% endblock %}
+	</head>
+	<body>
+		<div class = "page_header"><a href="{% url 'main' %}">
+			<h1>Compout.ru</h1>
+			<h5>Let's compute out!</h5>
+			</a>
+		</div>
+		</br>
+		<div class = "computing_list">
+			<li><a href="{% url 'page' %}">Линйная регрессия</a></li>
+		</div>
+
+
+		{%block content %}
+		<div class = 'text'>
+			<h2>Welcome to our website!</h2>
+			<p><h4> Здесь вы можете найти все самое необходимое для быстрого вычисления</h4></p>
+		</div>
+		{% endblock %}
+
+
+
+	</body>
+</html>

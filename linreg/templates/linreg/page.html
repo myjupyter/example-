@@ -1,0 +1,23 @@
+{% extends 'linreg/main.html' %}
+{% load static %}
+
+{% block css_path %}
+	<link rel="stylesheet" href="{% static 'css/page.css' %}">
+{% endblock %}
+
+{% block tit %}
+	<title>Линейная регрессия</title>
+{% endblock%}
+
+{% block content %}
+	<div class = "text">
+		<h2>Линейная регрессия</h2>
+		<p>Загрузите файл</p>
+		</br>
+		<form method = "post" enctype = "multipart/form-data">
+			{% csrf_token %}
+			{{form}}
+			<input type="submit" value="Отправить">
+		</form>
+	</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+.page_header {
+    background-color: #16AEE0;
+	margin-top: 20px;
+	padding: 20px 20px 20px 40px;
+}
+
+.page_header h1, h5 {
+		color: #FFFFFF;
+		padding-left: 75px;
+		font-family: "Russo One";
+	}
+
+.page_header h1 {
+	font-size: 30pt;
+}
+
+.page_header h5 {
+	font-size: 13pt;
+	font-family: "Ubuntu";
+}
+
+
+.text {
+	padding-top : 25px;
+	padding-left: 100px;
+	float: left;
+	width: 49%;
+}
+
+.text h2 {
+	font-family: "Ubuntu";
+	font-size: 25pt;
+}
+
+.text  h4  {
+	padding-top: 10px;	
+}
+
+li {
+	padding-left: 15px;
+	padding-top: 20px;
+	font-size: 13pt;
+}
+
+.computing_list {
+	margin-left: 20px;
+	background-color: #FFFFFF;
+	padding-top: 20px;
+	width: 220px;
+	height: 100%;
+	float: left;
+}
